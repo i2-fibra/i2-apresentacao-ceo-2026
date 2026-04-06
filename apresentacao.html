@@ -27,6 +27,8 @@
     }
 
     /* ─── BASE ──────────────────────────────────────────────── */
+    body { background: var(--verde); }
+    .reveal-viewport { background: var(--verde); }
     .reveal {
       font-family: 'Inter', Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
@@ -59,6 +61,7 @@
 
     /* ─── INNER ─────────────────────────────────────────────── */
     .si {
+      box-sizing: border-box;
       width: 100%; height: 100%;
       padding: 64px 96px;
       display: flex;
@@ -80,7 +83,7 @@
     /* ─── TAG ───────────────────────────────────────────────── */
     .tag {
       display: inline-block;
-      font-size: 0.7rem;
+      font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.2em;
       font-weight: 700;
@@ -102,9 +105,9 @@
     .slide-amarelo .ln  { background: var(--text-dark); }
 
     /* ─── TÍTULOS ───────────────────────────────────────────── */
-    .reveal .slide-verde h2    { color: var(--branco); font-size: 2.8em; margin-bottom: .2em; }
-    .reveal .slide-offwhite h2 { color: var(--text-dark); font-size: 2.8em; margin-bottom: .2em; }
-    .reveal .slide-amarelo h2  { color: var(--text-dark); font-size: 2.8em; margin-bottom: .2em; }
+    .reveal .slide-verde h2    { color: var(--branco); font-size: 5em; margin-bottom: .15em; }
+    .reveal .slide-offwhite h2 { color: var(--text-dark); font-size: 5em; margin-bottom: .15em; }
+    .reveal .slide-amarelo h2  { color: var(--text-dark); font-size: 5em; margin-bottom: .15em; }
 
     .ay { color: var(--amarelo); }
     .av { color: var(--verde); }
@@ -200,25 +203,25 @@
     }
     .met-card .n {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 2.8em; color: var(--verde); line-height: 1;
+      font-size: 5.5em; color: var(--verde); line-height: 1;
     }
     .met-card .l {
-      font-size: 0.62em; color: var(--text-muted);
+      font-size: 0.9em; color: var(--text-muted);
       text-transform: uppercase; letter-spacing: .08em;
-      margin-top: 8px; line-height: 1.4;
+      margin-top: 12px; line-height: 1.4;
     }
     .num-big {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 5.5em;
+      font-size: 13em;
       color: var(--verde); line-height: 1;
       display: block; position: relative; z-index: 2;
     }
     .num-label {
-      font-size: 0.72em;
+      font-size: 1.1em;
       color: var(--text-muted);
       text-transform: uppercase;
       letter-spacing: .1em;
-      display: block; margin-bottom: 24px;
+      display: block; margin-bottom: 32px;
       position: relative; z-index: 2;
     }
 
@@ -260,16 +263,16 @@
     }
     .org-box .nome {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.1em;
+      font-size: 1.4em;
       color: var(--text-dark);
       letter-spacing: .04em;
     }
     .org-box .cargo {
-      font-size: 0.54em;
+      font-size: 0.68em;
       color: var(--text-muted);
       text-transform: uppercase;
       letter-spacing: .08em;
-      margin-top: 4px;
+      margin-top: 6px;
       line-height: 1.4;
     }
     .org-gerentes-row {
@@ -300,10 +303,10 @@
     }
     .g-barra-amarela { background: var(--amarelo); border-radius: 4px; }
     .g-barra-verde   { background: var(--verde-alt); border-radius: 4px; }
-    .g-nome { font-family: 'Bebas Neue', sans-serif; font-size: 2.4em; color: var(--text-dark); line-height: 1; }
-    .g-cargo { font-size: 0.64em; text-transform: uppercase; letter-spacing: .14em; color: var(--text-muted); margin-bottom: 18px; }
+    .g-nome { font-family: 'Bebas Neue', sans-serif; font-size: 5.5em; color: var(--text-dark); line-height: 1; }
+    .g-cargo { font-size: 0.9em; text-transform: uppercase; letter-spacing: .14em; color: var(--text-muted); margin-bottom: 24px; }
     .gestor-wrap ul { margin: 0; padding-left: 0; list-style: none; }
-    .gestor-wrap li { font-size: 0.74em; color: var(--text-dark); line-height: 1.75; }
+    .gestor-wrap li { font-size: 1.05em; color: var(--text-dark); line-height: 1.9; }
     .gestor-wrap li::before { content: '→ '; color: var(--verde); font-weight: 700; }
 
     /* ─── DOIS DIRETORES ─────────────────────────────────────── */
@@ -315,9 +318,9 @@
       box-shadow: var(--shadow-soft);
       border-top: 5px solid var(--verde-alt);
     }
-    .dir-nome { font-family: 'Bebas Neue', sans-serif; font-size: 2.2em; color: var(--text-dark); }
-    .dir-cargo { font-size: 0.6em; text-transform: uppercase; letter-spacing: .12em; color: var(--text-muted); margin-bottom: 14px; }
-    .dir-box p { font-size: 0.72em; color: var(--text-dark); line-height: 1.7; }
+    .dir-nome { font-family: 'Bebas Neue', sans-serif; font-size: 4em; color: var(--text-dark); }
+    .dir-cargo { font-size: 0.85em; text-transform: uppercase; letter-spacing: .12em; color: var(--text-muted); margin-bottom: 18px; }
+    .dir-box p { font-size: 1em; color: var(--text-dark); line-height: 1.7; }
 
     /* ─── SEJA AP ────────────────────────────────────────────── */
     .seja-ap {
@@ -329,11 +332,11 @@
       border-left: 7px solid var(--amarelo);
       position: relative; z-index: 2;
     }
-    .seja-ap .sub { font-size: 0.62em; text-transform: uppercase; letter-spacing: .16em; color: var(--verde); font-weight: 700; margin-bottom: 6px; }
-    .seja-ap .tit { font-family: 'Bebas Neue', sans-serif; font-size: 2.2em; color: var(--text-dark); }
-    .seja-ap p  { font-size: 0.74em; margin-top: 12px; color: var(--text-dark); line-height: 1.7; }
-    .seja-ap ul { margin: 12px 0 0; padding: 0; list-style: none; }
-    .seja-ap li { font-size: 0.72em; color: var(--text-dark); line-height: 1.8; }
+    .seja-ap .sub { font-size: 0.85em; text-transform: uppercase; letter-spacing: .16em; color: var(--verde); font-weight: 700; margin-bottom: 8px; }
+    .seja-ap .tit { font-family: 'Bebas Neue', sans-serif; font-size: 3.2em; color: var(--text-dark); }
+    .seja-ap p  { font-size: 1em; margin-top: 16px; color: var(--text-dark); line-height: 1.7; }
+    .seja-ap ul { margin: 16px 0 0; padding: 0; list-style: none; }
+    .seja-ap li { font-size: 1em; color: var(--text-dark); line-height: 1.9; }
     .seja-ap li::before { content: '→ '; color: var(--amarelo-ouro); font-weight: 700; }
 
     /* ─── AUTONOMIA CARDS ────────────────────────────────────── */
@@ -346,9 +349,9 @@
       border-top: 5px solid var(--amarelo);
       text-align: center;
     }
-    .aut-card .an { font-family: 'Bebas Neue', sans-serif; font-size: 1.6em; color: var(--text-dark); }
-    .aut-card .ac { font-size: 0.58em; text-transform: uppercase; letter-spacing: .1em; color: var(--text-muted); margin-bottom: 10px; }
-    .aut-card p { font-size: 0.64em; color: var(--text-dark); line-height: 1.5; }
+    .aut-card .an { font-family: 'Bebas Neue', sans-serif; font-size: 2.8em; color: var(--text-dark); }
+    .aut-card .ac { font-size: 0.8em; text-transform: uppercase; letter-spacing: .1em; color: var(--text-muted); margin-bottom: 0; }
+    .aut-card p { display: none; }
 
     /* ─── REVEAL OVERRIDES ───────────────────────────────────── */
     .reveal .slides { text-align: left; }
@@ -374,6 +377,105 @@
     section.present .gsap-from:nth-child(5) { transition-delay: 0.45s; }
     section.present .gsap-from:nth-child(n+6) { transition-delay: 0.5s; }
 
+    /* ─── VALORES GRID (2 slides × 5 valores) ──────────────── */
+    .valores-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      align-items: stretch;
+      height: 700px;
+    }
+    .val-card {
+      background: rgba(255,255,255,.09);
+      border-radius: 18px;
+      padding: 28px 22px;
+      border-top: 5px solid var(--amarelo);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .val-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1em;
+      color: var(--amarelo);
+      opacity: .8;
+      letter-spacing: .18em;
+      margin-bottom: 16px;
+    }
+    .val-tit {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.1em;
+      color: var(--branco);
+      line-height: 1.05;
+      margin-bottom: 0;
+    }
+    .val-desc {
+      font-size: 0.82em;
+      color: rgba(255,255,255,.72);
+      line-height: 1.55;
+      margin-top: 14px;
+      flex: 1;
+    }
+
+
+    /* ─── SETOR ORG TREE ─────────────────────────────────────── */
+    .setor-wrap {
+      display: flex; flex-direction: column; gap: 0;
+      width: 100%; position: relative; z-index: 2;
+    }
+    .setor-ger-box {
+      background: var(--verde);
+      color: var(--branco);
+      border-radius: 14px;
+      padding: 16px 28px;
+      display: flex; align-items: center; gap: 20px;
+      box-shadow: var(--shadow-verde);
+    }
+    .setor-ger-nome {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.2em; color: var(--branco); line-height: 1;
+    }
+    .setor-ger-cargo {
+      font-size: 0.88em; text-transform: uppercase;
+      letter-spacing: .12em; color: rgba(255,255,255,.75); margin-top: 3px;
+    }
+    .setor-vline-center {
+      width: 3px; height: 16px;
+      background: rgba(10,155,132,.3); margin: 0 auto;
+    }
+    .setor-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    }
+    .setor-depto {
+      background: var(--branco); border-radius: 12px;
+      padding: 14px 14px; box-shadow: var(--shadow-soft);
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .setor-depto-header {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5em; color: var(--verde-dark);
+      border-bottom: 3px solid var(--amarelo);
+      padding-bottom: 8px; margin-bottom: 4px; line-height: 1.1;
+    }
+    .setor-pos {
+      font-size: 0.84em; color: var(--text-dark);
+      background: var(--off-white); border-radius: 7px;
+      padding: 7px 10px; border-left: 3px solid var(--verde); line-height: 1.3;
+    }
+    .setor-pos.lider {
+      background: rgba(10,155,132,.1); border-left-color: var(--verde-dark);
+      font-weight: 700; color: var(--verde-dark);
+    }
+    .setor-pos.vaga {
+      border-left-color: var(--amarelo-ouro);
+      color: var(--text-muted); font-style: italic;
+    }
+    .setor-pos.terc {
+      border-left-color: var(--text-muted);
+      color: var(--text-muted); font-style: italic;
+      background: transparent;
+    }
+
   </style>
 </head>
 <body>
@@ -383,7 +485,7 @@
 <!-- ══════════════════════════════════════════════════════════
      01 · CAPA
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-verde" data-transition="fade">
+<section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
 <div class="si" style="justify-content:center;align-items:center;text-align:center;">
   <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
     <defs><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
@@ -391,22 +493,22 @@
     <path class="fl" id="f2" stroke="rgba(255,255,255,.35)" d="M -100,650 C 600,250 1100,900 2000,380"/>
     <path class="fl" id="f3" stroke="#09BD78" filter="url(#glow)" d="M -100,980 C 300,1100 700,620 2000,100"/>
   </svg>
-  <div class="d2">2</div>
+  <div class="d2">i2</div>
 
   <img class="gsap-from"
-       src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg"
+       src="assets/logo/svg/i2fibra-amarelo.svg"
        alt="i2 Fibra"
-       style="height:100px;margin-bottom:32px;position:relative;z-index:2;"
+       style="height:150px;margin-bottom:28px;position:relative;z-index:2;"
        onerror="this.style.display='none'"/>
 
   <div class="gsap-from" style="width:64px;height:5px;background:var(--amarelo);border-radius:3px;margin:0 auto 28px;position:relative;z-index:2;"></div>
 
-  <h1 class="gsap-from" style="font-size:4.5em;color:var(--branco);position:relative;z-index:2;margin-bottom:16px;">Um Novo Momento</h1>
+  <h1 class="gsap-from" style="font-size:7em;color:var(--branco);position:relative;z-index:2;margin-bottom:16px;">Um Novo Momento</h1>
 
-  <p class="gsap-from" style="color:rgba(255,255,255,.5);font-size:0.75em;text-transform:uppercase;letter-spacing:.22em;position:relative;z-index:2;">
+  <p class="gsap-from" style="color:rgba(255,255,255,.55);font-size:1em;text-transform:uppercase;letter-spacing:.22em;position:relative;z-index:2;">
     Reunião de Gestão &nbsp;·&nbsp; 2026
   </p>
-  <p class="gsap-from" style="margin-top:56px;font-size:0.55em;color:rgba(255,255,255,.2);text-transform:uppercase;letter-spacing:.14em;position:relative;z-index:2;">
+  <p class="gsap-from" style="margin-top:48px;font-size:0.75em;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.14em;position:relative;z-index:2;">
     Gabriel Machado &nbsp;·&nbsp; CEO
   </p>
 </div>
@@ -415,29 +517,29 @@
 <!-- ══════════════════════════════════════════════════════════
      02 · MISSÃO
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-verde" data-transition="fade">
+<section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
 <div class="si">
   <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
     <path class="fl" stroke="rgba(255,255,255,.2)" d="M -100,450 C 500,150 1100,800 2000,280"/>
     <path class="fl" stroke="#F3C200" opacity=".3" d="M -100,800 C 400,950 800,450 2000,620"/>
   </svg>
-  <div class="d2">2</div>
+  <div class="d2">i2</div>
 
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from">Missão</div>
     <h2 class="gsap-from">Por que <span class="ay">existimos</span></h2>
     <div class="ln gsap-from"></div>
 
-    <div class="gsap-from" style="background:rgba(255,255,255,.1);border-left:6px solid var(--amarelo);border-radius:0 18px 18px 0;padding:32px 40px;margin-bottom:28px;backdrop-filter:blur(4px);">
-      <p style="font-size:1.1em;color:var(--branco);line-height:1.65;">
+    <div class="gsap-from" style="background:rgba(255,255,255,.1);border-left:8px solid var(--amarelo);border-radius:0 18px 18px 0;padding:40px 48px;margin-bottom:36px;backdrop-filter:blur(4px);">
+      <p style="font-size:1.8em;color:var(--branco);line-height:1.5;">
         "Conectar pessoas e negócios com <strong style="color:var(--amarelo);">excelência, proximidade e responsabilidade</strong>, gerando satisfação real em cada experiência."
       </p>
     </div>
 
-    <p class="gsap-from" style="font-size:0.88em;color:rgba(255,255,255,.65);font-style:italic;line-height:1.6;">
-      "A internet pode cair.<br/>
+    <p class="gsap-from" style="font-size:1.3em;color:rgba(255,255,255,.7);font-style:italic;line-height:1.6;">
+      "A internet pode cair.
       <strong style="color:var(--amarelo);">O nosso compromisso com o cliente, não.</strong>"
     </p>
   </div>
@@ -447,31 +549,26 @@
 <!-- ══════════════════════════════════════════════════════════
      03 · VISÃO 2030
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-offwhite" data-transition="fade">
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
 <div class="si">
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from">Visão</div>
     <h2 class="gsap-from">Onde vamos chegar<br/><span class="av">até 2030</span></h2>
     <div class="ln gsap-from"></div>
 
-    <div class="card gsap-from" style="max-width:860px;margin-bottom:28px;">
-      <p style="font-size:0.98em;color:var(--text-dark);line-height:1.7;">
-        "Até 2030, ser o <strong style="color:var(--verde);">provedor mais admirado</strong> da nossa região pela qualidade, velocidade de atendimento e cultura de alta performance, crescendo de forma sustentável."
+    <div class="card gsap-from" style="margin-bottom:32px;">
+      <p style="font-size:1.6em;color:var(--text-dark);line-height:1.55;">
+        "Até 2030, ser o <strong style="color:var(--verde);">provedor mais admirado</strong> da nossa região — pela qualidade, velocidade e cultura de alta performance."
       </p>
     </div>
 
-    <div class="gsap-from" style="display:flex;gap:20px;align-items:stretch;">
-      <div class="card-amarelo" style="border-radius:18px;padding:20px 28px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:180px;">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:3em;color:var(--text-dark);line-height:1;">20.000</span>
-        <span style="font-size:0.58em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-top:4px;">clientes em 2030</span>
-      </div>
-      <div class="card" style="border-radius:18px;padding:20px 28px;flex:1;display:flex;align-items:center;">
-        <p style="font-size:0.78em;color:var(--text-dark);line-height:1.6;margin:0;">
-          Crescimento sustentável · Alta performance · Expansão regional · Provedor mais admirado
-        </p>
+    <div class="gsap-from" style="display:flex;gap:24px;align-items:center;">
+      <div class="card-amarelo" style="border-radius:18px;padding:28px 48px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:5em;color:var(--text-dark);line-height:1;">20.000</span>
+        <span style="font-size:0.85em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-top:6px;">clientes em 2030</span>
       </div>
     </div>
   </div>
@@ -479,184 +576,98 @@
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
-     04-13 · VALORES (um por slide)
+     04 · VALORES 01–05
 ══════════════════════════════════════════════════════════ -->
-
-<section class="slide-verde" data-transition="fade">
-<div class="si" style="justify-content:center;">
+<section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
+<div class="si" style="justify-content:flex-start;">
   <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="rgba(255,255,255,.15)" d="M -100,500 C 600,200 1200,850 2000,350"/>
-    <path class="fl" stroke="#F3C200" opacity=".25" d="M -100,900 C 400,1000 800,500 2000,700"/>
+    <path class="fl" stroke="rgba(255,255,255,.12)" d="M -100,500 C 600,200 1200,850 2000,350"/>
+    <path class="fl" stroke="#F3C200" opacity=".22" d="M -100,900 C 400,1000 800,400 2000,680"/>
+    <path class="fl" stroke="#09BD78" opacity=".28" d="M -100,200 C 500,600 1100,100 2000,800"/>
   </svg>
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-  <div style="position:relative;z-index:2;">
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8em;color:rgba(255,255,255,.35);letter-spacing:.1em;" class="gsap-from">Valor 01</span>
-    <div class="valor-conteudo">
-      <div class="valor-titulo gsap-from">Princípios cristãos<br/>nos guiam</div>
-      <p class="valor-desc gsap-from">Nossa fé orienta nossas decisões e comportamentos. Ela é a base da nossa ética, do nosso trato com as pessoas e da forma como conduzimos o negócio. Se isso incomoda alguém, não é bom que esteja conosco.</p>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;width:100%;">
+    <div class="tag gsap-from" style="margin-bottom:4px;">Nossos Valores</div>
+    <h2 class="gsap-from" style="color:var(--branco);margin-bottom:0;">O que nos define</h2>
+    <div class="ln gsap-from" style="margin-bottom:20px;"></div>
+
+    <div class="valores-grid gsap-from">
+      <div class="val-card">
+        <div class="val-num">Valor 01</div>
+        <div class="val-tit">Princípios Cristãos<br/>nos Guiam</div>
+        <p class="val-desc">Nossa fé orienta decisões e comportamentos — é a base da nossa ética, do trato com as pessoas e de como conduzimos o negócio. Se isso incomoda alguém, não é bom que esteja conosco.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-num">Valor 02</div>
+        <div class="val-tit">Obcecados em<br/>Satisfazer o Cliente</div>
+        <p class="val-desc">Assumimos qualquer desafio do cliente como responsabilidade nossa. Não importa o problema: buscamos resolver com agilidade e excelência. O cliente é o centro de tudo.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-num">Valor 03</div>
+        <div class="val-tit">A Empresa é Nossa.<br/>O Resultado Também.</div>
+        <p class="val-desc">Agimos como donos e entregamos mais do que o esperado. Não fazemos o mínimo — buscamos gerar impacto real. O sucesso da i2 Fibra é o nosso sucesso.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-num">Valor 04</div>
+        <div class="val-tit">Fazemos o Certo<br/>Mesmo sem Audiência</div>
+        <p class="val-desc">Seguimos processos e direcionamentos sem atalhos ou jeitinhos. Nunca agimos com dúvida — buscamos clareza antes de agir. Nossa integridade não depende de quem está vendo.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-num">Valor 05</div>
+        <div class="val-tit">Somos Donos<br/>das Nossas Metas</div>
+        <p class="val-desc">Assumimos metas como compromisso e fazemos o necessário para alcançá-las — inclusive pensar diferente quando preciso, com responsabilidade e foco total no resultado.</p>
+      </div>
     </div>
   </div>
 </div>
 </section>
 
-<section class="slide-verde" data-transition="fade">
-<div class="si" style="justify-content:center;">
+<!-- ══════════════════════════════════════════════════════════
+     05 · VALORES 06–10
+══════════════════════════════════════════════════════════ -->
+<section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
+<div class="si" style="justify-content:flex-start;">
   <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="#09BD78" opacity=".4" d="M -100,600 C 500,300 1000,900 2000,450"/>
-    <path class="fl" stroke="rgba(255,255,255,.18)" d="M -100,350 C 700,700 1300,200 2000,600"/>
+    <path class="fl" stroke="#09BD78" opacity=".35" d="M -100,650 C 500,350 1000,900 2000,450"/>
+    <path class="fl" stroke="rgba(255,255,255,.15)" d="M -100,300 C 700,700 1300,200 2000,750"/>
+    <path class="fl" stroke="#F3C200" opacity=".2" d="M -100,900 C 300,750 700,400 2000,200"/>
   </svg>
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-  <div style="position:relative;z-index:2;">
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8em;color:rgba(255,255,255,.35);letter-spacing:.1em;" class="gsap-from">Valor 02</span>
-    <div class="valor-conteudo">
-      <div class="valor-titulo gsap-from">Obcecados em<br/>satisfazer o cliente</div>
-      <p class="valor-desc gsap-from">Assumimos qualquer desafio do cliente como nossa responsabilidade. Não importa o tipo de problema: buscamos resolver com agilidade e excelência. O cliente é o centro de tudo que fazemos.</p>
-    </div>
-  </div>
-</div>
-</section>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
-<section class="slide-verde" data-transition="fade">
-<div class="si" style="justify-content:center;">
-  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="#F3C200" opacity=".35" d="M -100,700 C 400,850 900,300 2000,500"/>
-    <path class="fl" stroke="rgba(255,255,255,.2)" d="M -100,300 C 600,600 1100,100 2000,750"/>
-  </svg>
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-  <div style="position:relative;z-index:2;">
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8em;color:rgba(255,255,255,.35);letter-spacing:.1em;" class="gsap-from">Valor 03</span>
-    <div class="valor-conteudo">
-      <div class="valor-titulo gsap-from">A empresa é nossa.<br/>O resultado também.</div>
-      <p class="valor-desc gsap-from">Agimos como donos e buscamos entregar mais do que o esperado. Não fazemos o mínimo: buscamos gerar impacto real. O sucesso da i2 Fibra é o nosso sucesso.</p>
-    </div>
-  </div>
-</div>
-</section>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;width:100%;">
+    <div class="tag gsap-from" style="margin-bottom:4px;">Nossos Valores</div>
+    <h2 class="gsap-from" style="color:var(--branco);margin-bottom:0;">O que nos move</h2>
+    <div class="ln gsap-from" style="margin-bottom:20px;"></div>
 
-<section class="slide-verde" data-transition="fade">
-<div class="si" style="justify-content:center;">
-  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="rgba(255,255,255,.2)" d="M -100,500 C 500,800 1000,200 2000,600"/>
-    <path class="fl" stroke="#09BD78" opacity=".35" d="M -100,200 C 700,450 1300,700 2000,300"/>
-  </svg>
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-  <div style="position:relative;z-index:2;">
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8em;color:rgba(255,255,255,.35);letter-spacing:.1em;" class="gsap-from">Valor 04</span>
-    <div class="valor-conteudo">
-      <div class="valor-titulo gsap-from">Fazemos o certo,<br/>mesmo quando ninguém está vendo</div>
-      <p class="valor-desc gsap-from">Seguimos processos e direcionamentos sem atalhos ou "jeitinhos". Nunca executamos com dúvida: buscamos clareza antes de agir. Nossa integridade não depende de audiência.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="slide-verde" data-transition="fade">
-<div class="si" style="justify-content:center;">
-  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="#F3C200" opacity=".3" d="M -100,850 C 600,650 1100,400 2000,200"/>
-    <path class="fl" stroke="rgba(255,255,255,.18)" d="M -100,400 C 400,700 900,100 2000,800"/>
-  </svg>
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-  <div style="position:relative;z-index:2;">
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8em;color:rgba(255,255,255,.35);letter-spacing:.1em;" class="gsap-from">Valor 05</span>
-    <div class="valor-conteudo">
-      <div class="valor-titulo gsap-from">Somos donos<br/>das nossas metas</div>
-      <p class="valor-desc gsap-from">Assumimos nossas metas como compromisso e fazemos o necessário para alcançá-las — inclusive pensar diferente quando preciso, sempre com responsabilidade e foco no resultado.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="slide-verde" data-transition="fade">
-<div class="si" style="justify-content:center;">
-  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="rgba(255,255,255,.2)" d="M -100,300 C 500,600 1000,900 2000,400"/>
-    <path class="fl" stroke="#09BD78" opacity=".4" d="M -100,700 C 700,400 1300,850 2000,150"/>
-  </svg>
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-  <div style="position:relative;z-index:2;">
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8em;color:rgba(255,255,255,.35);letter-spacing:.1em;" class="gsap-from">Valor 06</span>
-    <div class="valor-conteudo">
-      <div class="valor-titulo gsap-from">Resolvemos os problemas<br/>e focamos na solução</div>
-      <p class="valor-desc gsap-from">Resolvemos o problema de agora com rapidez e tratamos a causa raiz para que ele não volte a acontecer. Não ficamos presos no problema — avançamos com foco na solução.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="slide-verde" data-transition="fade">
-<div class="si" style="justify-content:center;">
-  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="#F3C200" opacity=".3" d="M -100,600 C 400,300 900,800 2000,500"/>
-    <path class="fl" stroke="rgba(255,255,255,.18)" d="M -100,200 C 600,550 1200,300 2000,900"/>
-  </svg>
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-  <div style="position:relative;z-index:2;">
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8em;color:rgba(255,255,255,.35);letter-spacing:.1em;" class="gsap-from">Valor 07</span>
-    <div class="valor-conteudo">
-      <div class="valor-titulo gsap-from">Aqui ninguém<br/>cresce sozinho</div>
-      <p class="valor-desc gsap-from">O crescimento é coletivo. Se a empresa cresce, todos que contribuíram para isso crescem junto. Colaboração não é obrigação — é o que nos torna mais fortes.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="slide-verde" data-transition="fade">
-<div class="si" style="justify-content:center;">
-  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="rgba(255,255,255,.2)" d="M -100,550 C 500,250 1100,750 2000,400"/>
-    <path class="fl" stroke="#09BD78" opacity=".35" d="M -100,900 C 300,700 700,350 2000,600"/>
-  </svg>
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-  <div style="position:relative;z-index:2;">
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8em;color:rgba(255,255,255,.35);letter-spacing:.1em;" class="gsap-from">Valor 08</span>
-    <div class="valor-conteudo">
-      <div class="valor-titulo gsap-from">Orgulho<br/>de Pertencer</div>
-      <p class="valor-desc gsap-from">Vestimos e sentimos o que é ser i2 Fibra. Representamos a empresa com compromisso, postura e responsabilidade — dentro e fora do trabalho. Ser i2 é motivo de orgulho.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="slide-verde" data-transition="fade">
-<div class="si" style="justify-content:center;">
-  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="#F3C200" opacity=".35" d="M -100,400 C 600,700 1100,250 2000,650"/>
-    <path class="fl" stroke="rgba(255,255,255,.2)" d="M -100,800 C 400,500 900,1000 2000,300"/>
-  </svg>
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-  <div style="position:relative;z-index:2;">
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8em;color:rgba(255,255,255,.35);letter-spacing:.1em;" class="gsap-from">Valor 09</span>
-    <div class="valor-conteudo">
-      <div class="valor-titulo gsap-from">Estamos sempre<br/>um passo à frente</div>
-      <p class="valor-desc gsap-from">Buscamos evolução constante, aprendemos rápido e nos antecipamos aos desafios do mercado. Quem está à frente não espera o problema chegar — ele já está resolvendo o de amanhã.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="slide-verde" data-transition="fade">
-<div class="si" style="justify-content:center;">
-  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="rgba(255,255,255,.2)" d="M -100,600 C 500,900 1000,300 2000,700"/>
-    <path class="fl" stroke="#09BD78" opacity=".4" d="M -100,250 C 700,500 1300,150 2000,800"/>
-  </svg>
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-  <div style="position:relative;z-index:2;">
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:1.8em;color:rgba(255,255,255,.35);letter-spacing:.1em;" class="gsap-from">Valor 10</span>
-    <div class="valor-conteudo">
-      <div class="valor-titulo gsap-from">Falamos o que<br/>precisa ser falado</div>
-      <p class="valor-desc gsap-from">Praticamos comunicação direta e respeitosa, em feedbacks positivos e negativos. Crescer exige ouvir, ajustar e evoluir. Feedback não é crítica — é cuidado.</p>
+    <div class="valores-grid gsap-from">
+      <div class="val-card">
+        <div class="val-num">Valor 06</div>
+        <div class="val-tit">Resolvemos e<br/>Focamos na Solução</div>
+        <p class="val-desc">Resolvemos o problema de agora com rapidez e tratamos a causa raiz para que ele não volte. Não ficamos presos no problema — avançamos com foco na solução.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-num">Valor 07</div>
+        <div class="val-tit">Aqui Ninguém<br/>Cresce Sozinho</div>
+        <p class="val-desc">O crescimento é coletivo. Se a empresa cresce, todos que contribuíram crescem junto. Colaboração não é obrigação — é o que nos torna mais fortes.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-num">Valor 08</div>
+        <div class="val-tit">Orgulho<br/>de Pertencer</div>
+        <p class="val-desc">Vestimos e sentimos o que é ser i2 Fibra. Representamos a empresa com compromisso, postura e responsabilidade — dentro e fora do trabalho. Ser i2 é motivo de orgulho.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-num">Valor 09</div>
+        <div class="val-tit">Sempre um<br/>Passo à Frente</div>
+        <p class="val-desc">Buscamos evolução constante, aprendemos rápido e nos antecipamos aos desafios. Quem está à frente não espera o problema chegar — ele já está resolvendo o de amanhã.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-num">Valor 10</div>
+        <div class="val-tit">Falamos o que<br/>Precisa ser Falado</div>
+        <p class="val-desc">Praticamos comunicação direta e respeitosa em feedbacks positivos e negativos. Crescer exige ouvir, ajustar e evoluir. Feedback não é crítica — é cuidado.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -665,10 +676,10 @@
 <!-- ══════════════════════════════════════════════════════════
      14 · META 2026
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-offwhite" data-transition="fade">
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
 <div class="si">
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from">Meta Geral</div>
@@ -690,14 +701,14 @@
 <!-- ══════════════════════════════════════════════════════════
      15 · ORGANOGRAMA
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-offwhite" data-transition="fade">
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
 <div class="si" style="padding-top:50px;padding-bottom:50px;">
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from">Estrutura</div>
-    <h2 class="gsap-from" style="font-size:2.2em;">Como estamos <span class="av">organizados</span></h2>
+    <h2 class="gsap-from" style="font-size:2.8em;">Como estamos <span class="av">organizados</span></h2>
     <div class="ln gsap-from"></div>
 
     <div class="org gsap-from">
@@ -763,20 +774,172 @@
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
+     SETOR COMERCIAL — Árvore
+══════════════════════════════════════════════════════════ -->
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
+<div class="si" style="padding-top:46px;padding-bottom:40px;">
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+
+  <div class="setor-wrap">
+    <div class="tag gsap-from">Estrutura do Setor</div>
+    <h2 class="gsap-from" style="font-size:2.8em;margin-bottom:4px;">Setor <span class="av">Comercial</span></h2>
+    <div class="ln gsap-from" style="margin-bottom:12px;"></div>
+
+    <div class="setor-ger-box gsap-from">
+      <div>
+        <div class="setor-ger-nome">Francieli</div>
+        <div class="setor-ger-cargo">Gerente Comercial</div>
+      </div>
+    </div>
+    <div class="setor-vline-center"></div>
+
+    <div class="setor-grid gsap-from">
+      <div class="setor-depto">
+        <div class="setor-depto-header">C1 · Vendas Internas</div>
+        <div class="setor-pos">Vendedor Interno</div>
+        <div class="setor-pos">Atend. Indique e Ganhe</div>
+      </div>
+      <div class="setor-depto">
+        <div class="setor-depto-header">C2 · Branding & Suporte</div>
+        <div class="setor-pos lider">Supervisor Externo</div>
+        <div class="setor-pos terc">Marketing (terceirizado)</div>
+        <div class="setor-pos terc">Tráfego (terceirizado)</div>
+        <div class="setor-pos">Assist. Marketing / Filmmaker</div>
+        <div class="setor-pos">Atend. Unidades Físicas ×5</div>
+      </div>
+      <div class="setor-depto">
+        <div class="setor-depto-header">C3 · Sucesso do Cliente</div>
+        <div class="setor-pos">Atend. Sucesso do Cliente</div>
+        <div class="setor-pos">Atendente de Retenção</div>
+        <div class="setor-pos">Analista de Validações</div>
+      </div>
+      <div class="setor-depto">
+        <div class="setor-depto-header">C4 · Vendas Corporativas</div>
+        <div class="setor-pos">Vendedor Corporativo</div>
+        <div class="setor-pos vaga">Vendedor Corporativo (vaga)</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     SETOR OPERAÇÕES — Árvore
+══════════════════════════════════════════════════════════ -->
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
+<div class="si" style="padding-top:46px;padding-bottom:40px;">
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+
+  <div class="setor-wrap">
+    <div class="tag gsap-from">Estrutura do Setor</div>
+    <h2 class="gsap-from" style="font-size:2.8em;margin-bottom:4px;">Setor <span class="av">Operações</span></h2>
+    <div class="ln gsap-from" style="margin-bottom:12px;"></div>
+
+    <div class="setor-ger-box gsap-from">
+      <div>
+        <div class="setor-ger-nome">Rafael</div>
+        <div class="setor-ger-cargo">Gerente de Operações</div>
+      </div>
+    </div>
+    <div class="setor-vline-center"></div>
+
+    <div class="setor-grid gsap-from">
+      <div class="setor-depto">
+        <div class="setor-depto-header">C1 · Atendimento</div>
+        <div class="setor-pos lider">Supervisor de Atendimento</div>
+        <div class="setor-pos">Atendente NV3</div>
+        <div class="setor-pos">Atendente NV2</div>
+        <div class="setor-pos">Atendente NV1</div>
+      </div>
+      <div class="setor-depto">
+        <div class="setor-depto-header">C2 · Redes & TI</div>
+        <div class="setor-pos">Analista de Redes e TI</div>
+        <div class="setor-pos">Assistente de Redes e TI</div>
+      </div>
+      <div class="setor-depto">
+        <div class="setor-depto-header">C3 · Campo</div>
+        <div class="setor-pos lider">Supervisor de Campo</div>
+        <div class="setor-pos">Instalador e Reparador de Redes</div>
+      </div>
+      <div class="setor-depto">
+        <div class="setor-depto-header">C4 · PCO</div>
+        <div class="setor-pos lider vaga">Supervisor PCO (vaga)</div>
+        <div class="setor-pos">Analista de Rotas</div>
+        <div class="setor-pos">Assistente de Rotas</div>
+        <div class="setor-pos">Analista de Estoque</div>
+        <div class="setor-pos">Analista de Frotas</div>
+        <div class="setor-pos">Assist. Projetos e Infra</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     SETOR ADMINISTRATIVO — Árvore
+══════════════════════════════════════════════════════════ -->
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
+<div class="si" style="padding-top:46px;padding-bottom:40px;">
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+
+  <div class="setor-wrap">
+    <div class="tag gsap-from">Estrutura do Setor</div>
+    <h2 class="gsap-from" style="font-size:2.8em;margin-bottom:4px;">Setor <span class="av">Administrativo</span></h2>
+    <div class="ln gsap-from" style="margin-bottom:12px;"></div>
+
+    <div class="setor-ger-box gsap-from">
+      <div>
+        <div class="setor-ger-nome">Weslley</div>
+        <div class="setor-ger-cargo">Gerente Administrativo</div>
+      </div>
+    </div>
+    <div class="setor-vline-center"></div>
+
+    <div class="setor-grid gsap-from">
+      <div class="setor-depto">
+        <div class="setor-depto-header">C1 · Administração</div>
+        <div class="setor-pos lider">Supervisor Administrativo</div>
+        <div class="setor-pos">Analista de Qualidade</div>
+        <div class="setor-pos">Analista Financeiro</div>
+        <div class="setor-pos">Assistente Financeiro</div>
+        <div class="setor-pos">Estagiário Geral ×2</div>
+      </div>
+      <div class="setor-depto">
+        <div class="setor-depto-header">C2 · RH & DP</div>
+        <div class="setor-pos lider">Supervisora de RH / DP</div>
+        <div class="setor-pos vaga">Assistente de RH (vaga)</div>
+      </div>
+      <div class="setor-depto">
+        <div class="setor-depto-header">C3 · Jurídico</div>
+        <div class="setor-pos terc">Jurídico Terceirizado</div>
+      </div>
+      <div class="setor-depto">
+        <div class="setor-depto-header">C4 · Contabilidade</div>
+        <div class="setor-pos terc">Contabilidade Terceirizada</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
      16 · AUTONOMIA DOS GERENTES
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-offwhite" data-transition="fade">
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
 <div class="si">
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from">Liderança</div>
     <h2 class="gsap-from">Autonomia &<br/><span class="av">Responsabilidade</span></h2>
     <div class="ln gsap-from"></div>
 
-    <div class="card gsap-from" style="max-width:900px;margin-bottom:24px;border-left:6px solid var(--amarelo);border-radius:0 18px 18px 0;background:var(--branco);">
-      <p style="font-size:0.92em;color:var(--text-dark);line-height:1.65;font-style:italic;font-weight:600;">
+    <div class="card gsap-from" style="margin-bottom:28px;border-left:8px solid var(--amarelo);border-radius:0 18px 18px 0;background:var(--branco);">
+      <p style="font-size:1.6em;color:var(--text-dark);line-height:1.55;font-style:italic;font-weight:600;">
         "Cada um de vocês tem autonomia total para liderar seu setor. Minha função é dar direção, recursos e remover obstáculos — não microgerenciar."
       </p>
     </div>
@@ -805,18 +968,18 @@
 <!-- ══════════════════════════════════════════════════════════
      17 · FRANCIELI
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-offwhite" data-transition="fade">
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
 <div class="si">
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from">Comercial</div>
-    <h2 class="gsap-from" style="font-size:2.2em;">Quem movimenta<br/><span class="av">o crescimento</span></h2>
+    <h2 class="gsap-from" style="font-size:2.8em;">Quem movimenta<br/><span class="av">o crescimento</span></h2>
     <div class="ln gsap-from"></div>
 
     <div class="gestor-wrap gsap-from">
-      <div class="g-barra-verde"></div>
+      <div class="g-barra-amarela"></div>
       <div>
         <div class="g-nome">Francieli</div>
         <div class="g-cargo">Gerente Comercial</div>
@@ -829,8 +992,8 @@
       </div>
     </div>
 
-    <div class="gsap-from" style="margin-top:20px;background:var(--verde-alt);border-radius:16px;padding:18px 26px;">
-      <p style="font-size:0.78em;color:var(--branco);font-weight:600;font-style:italic;">
+    <div class="gsap-from" style="margin-top:20px;background:var(--amarelo);border-radius:16px;padding:18px 26px;">
+      <p style="font-size:0.78em;color:var(--text-dark);font-weight:600;font-style:italic;">
         "Francieli é quem lidera o motor do crescimento da i2 Fibra."
       </p>
     </div>
@@ -841,18 +1004,18 @@
 <!-- ══════════════════════════════════════════════════════════
      18 · RAFAEL
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-offwhite" data-transition="fade">
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
 <div class="si">
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from">Operações</div>
-    <h2 class="gsap-from" style="font-size:2.2em;">Quem garante<br/><span class="av">a excelência técnica</span></h2>
+    <h2 class="gsap-from" style="font-size:2.8em;">Quem garante<br/><span class="av">a excelência técnica</span></h2>
     <div class="ln gsap-from"></div>
 
     <div class="gestor-wrap gsap-from">
-      <div class="g-barra-verde"></div>
+      <div class="g-barra-amarela"></div>
       <div>
         <div class="g-nome">Rafael</div>
         <div class="g-cargo">Gerente de Operações</div>
@@ -865,8 +1028,8 @@
       </div>
     </div>
 
-    <div class="gsap-from" style="margin-top:20px;background:var(--verde-alt);border-radius:16px;padding:18px 26px;">
-      <p style="font-size:0.78em;color:var(--branco);font-weight:600;font-style:italic;">
+    <div class="gsap-from" style="margin-top:20px;background:var(--amarelo);border-radius:16px;padding:18px 26px;">
+      <p style="font-size:0.78em;color:var(--text-dark);font-weight:600;font-style:italic;">
         "Rafael é quem garante que a i2 Fibra entrega o que promete, toda vez."
       </p>
     </div>
@@ -877,14 +1040,14 @@
 <!-- ══════════════════════════════════════════════════════════
      19 · WESLLEY
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-offwhite" data-transition="fade">
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
 <div class="si">
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from">Administrativo</div>
-    <h2 class="gsap-from" style="font-size:2.2em;">Quem mantém<br/><span class="av">a casa em ordem</span></h2>
+    <h2 class="gsap-from" style="font-size:2.8em;">Quem mantém<br/><span class="av">a casa em ordem</span></h2>
     <div class="ln gsap-from"></div>
 
     <div class="gestor-wrap gsap-from">
@@ -911,34 +1074,70 @@
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
-     20 · CLEIBERSON & CLEIRE
+     20 · LAYSLA — DH & DP
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-offwhite" data-transition="fade">
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
 <div class="si">
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+
+  <div style="position:relative;z-index:2;">
+    <div class="tag gsap-from">Desenvolvimento Humano & DP</div>
+    <h2 class="gsap-from" style="font-size:2.8em;">Quem cuida das<br/><span class="av">pessoas da i2</span></h2>
+    <div class="ln gsap-from"></div>
+
+    <div class="gestor-wrap gsap-from">
+      <div class="g-barra-amarela"></div>
+      <div>
+        <div class="g-nome">Laysla</div>
+        <div class="g-cargo">Gestora de DH & Departamento Pessoal</div>
+        <ul>
+          <li>Responsável pela disseminação e fortalecimento da cultura organizacional da i2 Fibra</li>
+          <li>Gestão de clima organizacional, engajamento e bem-estar da equipe</li>
+          <li>Processos de RH: onboarding, treinamentos, avaliação de desempenho e desenvolvimento de pessoas</li>
+          <li>Departamento Pessoal: folha de pagamento, compliance trabalhista e gestão de benefícios</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gsap-from" style="margin-top:20px;background:var(--amarelo);border-radius:16px;padding:18px 26px;">
+      <p style="font-size:0.78em;color:var(--text-dark);font-weight:600;font-style:italic;">
+        "Laysla é quem garante que as pessoas certas estão no lugar certo — e que elas queiram fazer parte disso."
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     21 · CLEIBERSON & CLEIRE
+══════════════════════════════════════════════════════════ -->
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
+<div class="si">
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from">Diretoria Geral</div>
-    <h2 class="gsap-from" style="font-size:2.2em;">Os que tornaram<br/>tudo isso <span class="av">possível</span></h2>
+    <h2 class="gsap-from" style="font-size:2.8em;">Os que tornaram<br/>tudo isso <span class="av">possível</span></h2>
     <div class="ln gsap-from"></div>
 
     <div class="dir-grid gsap-from">
       <div class="dir-box">
         <div class="dir-nome">Cleiberson</div>
         <div class="dir-cargo">Sócio · Diretor Geral</div>
-        <p>Desde 2000 construindo o que a i2 Fibra é hoje. Nessa nova fase, seu olhar estratégico se volta para a expansão, para novos investimentos e para o futuro do Grupo i2 — com a mesma convicção de sempre.</p>
+        <p>Desde 2000 construindo o que a i2 Fibra é hoje — agora com foco na expansão e no futuro do Grupo i2.</p>
       </div>
       <div class="dir-box">
         <div class="dir-nome">Cleire</div>
         <div class="dir-cargo">Sócia · Diretora Geral</div>
-        <p>Parte essencial da liderança desde 2017. Hoje com foco total no estratégico, ela carrega o DNA da empresa e leva a i2 Fibra para novas conquistas — representando tudo que a marca construiu com cuidado e propósito.</p>
+        <p>Carrega o DNA da empresa e lidera com propósito — levando a i2 Fibra para novas conquistas.</p>
       </div>
     </div>
 
-    <div class="gsap-from" style="margin-top:22px;background:var(--branco);border-radius:16px;padding:20px 28px;box-shadow:var(--shadow-soft);border-left:6px solid var(--verde-alt);">
-      <p style="font-size:0.76em;color:var(--text-dark);font-style:italic;line-height:1.65;">
-        "Vocês dois são a razão pela qual a i2 Fibra tem história. Agora, vocês são a razão pela qual ela vai ter um futuro ainda maior."
+    <div class="gsap-from" style="margin-top:24px;background:var(--branco);border-radius:16px;padding:24px 32px;box-shadow:var(--shadow-soft);border-left:8px solid var(--verde-alt);">
+      <p style="font-size:1.2em;color:var(--text-dark);font-style:italic;line-height:1.55;">
+        "Vocês são a razão pela qual a i2 Fibra tem história — e a razão pela qual ela vai ter um futuro ainda maior."
       </p>
     </div>
   </div>
@@ -948,10 +1147,10 @@
 <!-- ══════════════════════════════════════════════════════════
      21 · SEJA AP
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-offwhite" data-transition="fade">
+<section class="slide-offwhite" data-transition="fade" data-background-color="#F4F6F5">
 <div class="si">
-  <div class="d2">2</div>
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-verde.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from">Parceria Estratégica</div>
@@ -961,7 +1160,6 @@
     <div class="seja-ap gsap-from">
       <div class="sub">Alta Performance nos Negócios</div>
       <div class="tit">Elevando o nível da gestão</div>
-      <p>Contratamos a Seja AP para nos apoiar na jornada de alta performance — uma consultoria geral que trabalha com a liderança da i2 Fibra para acelerar resultados com método e consistência.</p>
       <ul>
         <li>Metodologia de gestão de alta performance</li>
         <li>Suporte direto à liderança e à cultura de resultados</li>
@@ -969,7 +1167,7 @@
       </ul>
     </div>
 
-    <p class="gsap-from" style="margin-top:18px;font-size:0.65em;color:var(--text-muted);font-style:italic;">
+    <p class="gsap-from" style="margin-top:24px;font-size:1.1em;color:var(--text-muted);font-style:italic;">
       "Não contratamos para dizer o que fazer. Contratamos para nos ajudar a fazer melhor, mais rápido."
     </p>
   </div>
@@ -979,25 +1177,25 @@
 <!-- ══════════════════════════════════════════════════════════
      22 · CAPACITAÇÃO
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-verde" data-transition="fade">
+<section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
 <div class="si" style="justify-content:center;align-items:center;text-align:center;">
   <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
     <path class="fl" stroke="rgba(255,255,255,.2)" d="M -100,450 C 500,250 1000,700 2000,380"/>
     <path class="fl" stroke="#F3C200" opacity=".3" d="M -100,750 C 400,900 900,400 2000,620"/>
   </svg>
-  <div class="d2">2</div>
+  <div class="d2">i2</div>
 
-  <img class="logo-tr" src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
 
   <div style="position:relative;z-index:2;">
     <div class="tag gsap-from" style="text-align:center;">Pessoas & Crescimento</div>
-    <h2 class="gsap-from" style="font-size:3.2em;color:var(--branco);text-align:center;">
+    <h2 class="gsap-from" style="font-size:4.5em;color:var(--branco);text-align:center;">
       Agenda de<br/><span class="ay">Capacitação 2026</span>
     </h2>
-    <div class="ln gsap-from" style="margin:16px auto 28px;background:var(--amarelo);"></div>
-    <p class="gsap-from" style="color:rgba(255,255,255,.7);font-size:0.88em;max-width:680px;margin:0 auto;line-height:1.75;text-align:center;">
+    <div class="ln gsap-from" style="margin:16px auto 32px;background:var(--amarelo);"></div>
+    <p class="gsap-from" style="color:rgba(255,255,255,.75);font-size:1.3em;max-width:900px;margin:0 auto;line-height:1.75;text-align:center;">
       Investir em pessoas é a aposta mais segura que existe.<br/>
-      Ao longo de 2026, teremos uma agenda estruturada<br/>de cursos e capacitações para toda a equipe.
+      Em 2026, teremos uma agenda estruturada de capacitações para toda a equipe.
     </p>
   </div>
 </div>
@@ -1006,35 +1204,35 @@
 <!-- ══════════════════════════════════════════════════════════
      23 · ENCERRAMENTO
 ══════════════════════════════════════════════════════════ -->
-<section class="slide-verde" data-transition="fade">
+<section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
 <div class="si" style="justify-content:center;align-items:center;text-align:center;">
   <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
     <path class="fl" stroke="#F3C200" opacity=".4" d="M -100,700 C 500,850 900,300 2000,550"/>
     <path class="fl" stroke="rgba(255,255,255,.25)" d="M -100,950 C 300,1050 700,580 2000,100"/>
     <path class="fl" stroke="#09BD78" opacity=".3" d="M -100,300 C 600,500 1200,200 2000,750"/>
   </svg>
-  <div class="d2">2</div>
+  <div class="d2">i2</div>
 
   <img class="gsap-from"
-       src="../.agent/skills/i2-fibra-visual/assets/logo/svg/i2fibra-amarelo.svg"
+       src="assets/logo/svg/i2fibra-amarelo.svg"
        alt="i2 Fibra"
        style="height:82px;margin-bottom:28px;position:relative;z-index:2;"
        onerror="this.style.display='none'"/>
 
   <div class="gsap-from" style="width:64px;height:5px;background:var(--amarelo);border-radius:3px;margin:0 auto 32px;position:relative;z-index:2;"></div>
 
-  <h2 class="gsap-from" style="color:var(--branco);font-size:2.8em;max-width:900px;line-height:1.2;position:relative;z-index:2;text-align:center;">
+  <h2 class="gsap-from" style="color:var(--branco);font-size:4.5em;max-width:1400px;line-height:1.15;position:relative;z-index:2;text-align:center;">
     A i2 Fibra foi construída com propósito.<br/>
     Agora, juntos, vamos levar ela para<br/>
     <span class="ay">outro nível.</span>
   </h2>
 
-  <p class="gsap-from" style="font-size:0.78em;color:rgba(255,255,255,.55);margin-top:32px;position:relative;z-index:2;line-height:1.8;text-align:center;">
+  <p class="gsap-from" style="font-size:1.1em;color:rgba(255,255,255,.6);margin-top:36px;position:relative;z-index:2;line-height:1.8;text-align:center;">
     Obrigado pela confiança de cada um.<br/>
     Estamos começando um novo capítulo — e vocês fazem parte disso.
   </p>
 
-  <p class="gsap-from" style="margin-top:52px;font-size:0.54em;color:rgba(255,255,255,.2);text-transform:uppercase;letter-spacing:.15em;position:relative;z-index:2;">
+  <p class="gsap-from" style="margin-top:48px;font-size:0.75em;color:rgba(255,255,255,.25);text-transform:uppercase;letter-spacing:.15em;position:relative;z-index:2;">
     Gabriel Machado &nbsp;·&nbsp; CEO &nbsp;·&nbsp; i2 Fibra &nbsp;·&nbsp; 2026
   </p>
 </div>
@@ -1055,8 +1253,8 @@
     transitionSpeed: 'default',
     backgroundTransition: 'fade',
     width: 1920,
-    height: 980,
-    margin: 0.02,
+    height: 1080,
+    margin: 0,
     minScale: 0.1,
     maxScale: 2.0,
     keyboard: {
