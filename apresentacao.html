@@ -378,43 +378,41 @@
     section.present .gsap-from:nth-child(n+6) { transition-delay: 0.5s; }
 
     /* ─── VALORES GRID (2 slides × 5 valores) ──────────────── */
-    .valores-grid {
+    /* ─── VALORES 2-COL (2 por slide) ──────────────────────── */
+    .valores-2col {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 14px;
-      align-items: stretch;
-      height: 750px;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      height: 820px;
     }
     .val-card {
-      background: rgba(255,255,255,.09);
-      border-radius: 18px;
-      padding: 24px 20px;
-      border-top: 5px solid var(--amarelo);
+      background: rgba(255,255,255,.1);
+      border-radius: 22px;
+      padding: 48px 44px;
+      border-top: 7px solid var(--amarelo);
       display: flex;
       flex-direction: column;
-      overflow: hidden;
     }
     .val-num {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.05em;
+      font-size: 1.15em;
       color: var(--amarelo);
-      opacity: .85;
-      letter-spacing: .18em;
-      margin-bottom: 10px;
+      opacity: .9;
+      letter-spacing: .2em;
+      margin-bottom: 14px;
     }
     .val-tit {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 2.4em;
+      font-size: 4.5em;
       color: var(--branco);
-      line-height: 1.05;
+      line-height: 1;
       margin-bottom: 0;
     }
     .val-desc {
-      font-size: 0.95em;
-      color: rgba(255,255,255,.78);
-      line-height: 1.6;
-      margin-top: 14px;
-      flex: 1;
+      font-size: 1.35em;
+      color: rgba(255,255,255,.82);
+      line-height: 1.65;
+      margin-top: 24px;
     }
 
 
@@ -576,48 +574,29 @@
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
-     04 · VALORES 01–05
+     04 · VALORES 01–02
 ══════════════════════════════════════════════════════════ -->
 <section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
-<div class="si" style="justify-content:flex-start;padding-top:44px;padding-bottom:44px;">
+<div class="si" style="justify-content:flex-start;padding-top:36px;padding-bottom:36px;">
   <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
     <path class="fl" stroke="rgba(255,255,255,.12)" d="M -100,500 C 600,200 1200,850 2000,350"/>
     <path class="fl" stroke="#F3C200" opacity=".22" d="M -100,900 C 400,1000 800,400 2000,680"/>
-    <path class="fl" stroke="#09BD78" opacity=".28" d="M -100,200 C 500,600 1100,100 2000,800"/>
   </svg>
   <div class="d2">i2</div>
   <img class="logo-tr" src="assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-
   <div style="position:relative;z-index:2;display:flex;flex-direction:column;width:100%;">
-    <div class="tag gsap-from" style="margin-bottom:4px;">Nossos Valores</div>
-    <h2 class="gsap-from" style="color:var(--branco);margin-bottom:0;font-size:3em;">O que nos define</h2>
-    <div class="ln gsap-from" style="margin-bottom:14px;"></div>
-
-    <div class="valores-grid gsap-from">
+    <div class="tag gsap-from">Nossos Valores · 01 / 10</div>
+    <div class="ln gsap-from" style="margin-bottom:16px;"></div>
+    <div class="valores-2col gsap-from">
       <div class="val-card">
         <div class="val-num">Valor 01</div>
-        <div class="val-tit">Princípios Cristãos<br/>nos Guiam</div>
+        <div class="val-tit">Princípios Cristãos nos Guiam</div>
         <p class="val-desc">Nossa fé orienta decisões e comportamentos — é a base da nossa ética, do trato com as pessoas e de como conduzimos o negócio. Se isso incomoda alguém, não é bom que esteja conosco.</p>
       </div>
       <div class="val-card">
         <div class="val-num">Valor 02</div>
-        <div class="val-tit">Obcecados em<br/>Satisfazer o Cliente</div>
+        <div class="val-tit">Obcecados em Satisfazer o Cliente</div>
         <p class="val-desc">Assumimos qualquer desafio do cliente como responsabilidade nossa. Não importa o problema: buscamos resolver com agilidade e excelência. O cliente é o centro de tudo.</p>
-      </div>
-      <div class="val-card">
-        <div class="val-num">Valor 03</div>
-        <div class="val-tit">A Empresa é Nossa.<br/>O Resultado Também.</div>
-        <p class="val-desc">Agimos como donos e entregamos mais do que o esperado. Não fazemos o mínimo — buscamos gerar impacto real. O sucesso da i2 Fibra é o nosso sucesso.</p>
-      </div>
-      <div class="val-card">
-        <div class="val-num">Valor 04</div>
-        <div class="val-tit">Fazemos o Certo<br/>Mesmo sem Audiência</div>
-        <p class="val-desc">Seguimos processos e direcionamentos sem atalhos ou jeitinhos. Nunca agimos com dúvida — buscamos clareza antes de agir. Nossa integridade não depende de quem está vendo.</p>
-      </div>
-      <div class="val-card">
-        <div class="val-num">Valor 05</div>
-        <div class="val-tit">Somos Donos<br/>das Nossas Metas</div>
-        <p class="val-desc">Assumimos metas como compromisso e fazemos o necessário para alcançá-las — inclusive pensar diferente quando preciso, com responsabilidade e foco total no resultado.</p>
       </div>
     </div>
   </div>
@@ -625,47 +604,118 @@
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
-     05 · VALORES 06–10
+     05 · VALORES 03–04
 ══════════════════════════════════════════════════════════ -->
 <section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
-<div class="si" style="justify-content:flex-start;padding-top:44px;padding-bottom:44px;">
+<div class="si" style="justify-content:flex-start;padding-top:36px;padding-bottom:36px;">
   <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-    <path class="fl" stroke="#09BD78" opacity=".35" d="M -100,650 C 500,350 1000,900 2000,450"/>
-    <path class="fl" stroke="rgba(255,255,255,.15)" d="M -100,300 C 700,700 1300,200 2000,750"/>
-    <path class="fl" stroke="#F3C200" opacity=".2" d="M -100,900 C 300,750 700,400 2000,200"/>
+    <path class="fl" stroke="#09BD78" opacity=".3" d="M -100,700 C 500,400 1100,900 2000,500"/>
+    <path class="fl" stroke="#F3C200" opacity=".2" d="M -100,300 C 400,600 900,200 2000,700"/>
   </svg>
   <div class="d2">i2</div>
   <img class="logo-tr" src="assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
-
   <div style="position:relative;z-index:2;display:flex;flex-direction:column;width:100%;">
-    <div class="tag gsap-from" style="margin-bottom:4px;">Nossos Valores</div>
-    <h2 class="gsap-from" style="color:var(--branco);margin-bottom:0;font-size:3em;">O que nos move</h2>
-    <div class="ln gsap-from" style="margin-bottom:14px;"></div>
-
-    <div class="valores-grid gsap-from">
+    <div class="tag gsap-from">Nossos Valores · 03 / 10</div>
+    <div class="ln gsap-from" style="margin-bottom:16px;"></div>
+    <div class="valores-2col gsap-from">
       <div class="val-card">
-        <div class="val-num">Valor 06</div>
-        <div class="val-tit">Resolvemos e<br/>Focamos na Solução</div>
-        <p class="val-desc">Resolvemos o problema de agora com rapidez e tratamos a causa raiz para que ele não volte. Não ficamos presos no problema — avançamos com foco na solução.</p>
+        <div class="val-num">Valor 03</div>
+        <div class="val-tit">A Empresa é Nossa. O Resultado Também.</div>
+        <p class="val-desc">Agimos como donos e entregamos mais do que o esperado. Não fazemos o mínimo — buscamos gerar impacto real. O sucesso da i2 Fibra é o nosso sucesso.</p>
       </div>
       <div class="val-card">
+        <div class="val-num">Valor 04</div>
+        <div class="val-tit">Fazemos o Certo Mesmo sem Audiência</div>
+        <p class="val-desc">Seguimos processos e direcionamentos sem atalhos ou jeitinhos. Nunca agimos com dúvida — buscamos clareza antes de agir. Nossa integridade não depende de quem está vendo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     06 · VALORES 05–06
+══════════════════════════════════════════════════════════ -->
+<section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
+<div class="si" style="justify-content:flex-start;padding-top:36px;padding-bottom:36px;">
+  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+    <path class="fl" stroke="rgba(255,255,255,.15)" d="M -100,600 C 600,300 1200,800 2000,400"/>
+    <path class="fl" stroke="#F3C200" opacity=".25" d="M -100,850 C 300,950 700,450 2000,250"/>
+  </svg>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;width:100%;">
+    <div class="tag gsap-from">Nossos Valores · 05 / 10</div>
+    <div class="ln gsap-from" style="margin-bottom:16px;"></div>
+    <div class="valores-2col gsap-from">
+      <div class="val-card">
+        <div class="val-num">Valor 05</div>
+        <div class="val-tit">Somos Donos das Nossas Metas</div>
+        <p class="val-desc">Assumimos metas como compromisso e fazemos o necessário para alcançá-las — inclusive pensar diferente quando preciso, com responsabilidade e foco total no resultado.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-num">Valor 06</div>
+        <div class="val-tit">Resolvemos e Focamos na Solução</div>
+        <p class="val-desc">Resolvemos o problema de agora com rapidez e tratamos a causa raiz para que ele não volte. Não ficamos presos no problema — avançamos com foco na solução.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     07 · VALORES 07–08
+══════════════════════════════════════════════════════════ -->
+<section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
+<div class="si" style="justify-content:flex-start;padding-top:36px;padding-bottom:36px;">
+  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+    <path class="fl" stroke="#09BD78" opacity=".35" d="M -100,650 C 500,350 1000,900 2000,450"/>
+    <path class="fl" stroke="rgba(255,255,255,.15)" d="M -100,300 C 700,700 1300,200 2000,750"/>
+  </svg>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;width:100%;">
+    <div class="tag gsap-from">Nossos Valores · 07 / 10</div>
+    <div class="ln gsap-from" style="margin-bottom:16px;"></div>
+    <div class="valores-2col gsap-from">
+      <div class="val-card">
         <div class="val-num">Valor 07</div>
-        <div class="val-tit">Aqui Ninguém<br/>Cresce Sozinho</div>
+        <div class="val-tit">Aqui Ninguém Cresce Sozinho</div>
         <p class="val-desc">O crescimento é coletivo. Se a empresa cresce, todos que contribuíram crescem junto. Colaboração não é obrigação — é o que nos torna mais fortes.</p>
       </div>
       <div class="val-card">
         <div class="val-num">Valor 08</div>
-        <div class="val-tit">Orgulho<br/>de Pertencer</div>
+        <div class="val-tit">Orgulho de Pertencer</div>
         <p class="val-desc">Vestimos e sentimos o que é ser i2 Fibra. Representamos a empresa com compromisso, postura e responsabilidade — dentro e fora do trabalho. Ser i2 é motivo de orgulho.</p>
       </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     08 · VALORES 09–10
+══════════════════════════════════════════════════════════ -->
+<section class="slide-verde" data-transition="fade" data-background-color="#0A9B84">
+<div class="si" style="justify-content:flex-start;padding-top:36px;padding-bottom:36px;">
+  <svg class="fibers" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+    <path class="fl" stroke="#F3C200" opacity=".2" d="M -100,900 C 300,750 700,400 2000,200"/>
+    <path class="fl" stroke="rgba(255,255,255,.18)" d="M -100,400 C 500,700 1100,200 2000,600"/>
+  </svg>
+  <div class="d2">i2</div>
+  <img class="logo-tr" src="assets/logo/svg/i2fibra-amarelo.svg" alt="i2 Fibra" onerror="this.style.display='none'"/>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;width:100%;">
+    <div class="tag gsap-from">Nossos Valores · 09 / 10</div>
+    <div class="ln gsap-from" style="margin-bottom:16px;"></div>
+    <div class="valores-2col gsap-from">
       <div class="val-card">
         <div class="val-num">Valor 09</div>
-        <div class="val-tit">Sempre um<br/>Passo à Frente</div>
+        <div class="val-tit">Sempre um Passo à Frente</div>
         <p class="val-desc">Buscamos evolução constante, aprendemos rápido e nos antecipamos aos desafios. Quem está à frente não espera o problema chegar — ele já está resolvendo o de amanhã.</p>
       </div>
       <div class="val-card">
         <div class="val-num">Valor 10</div>
-        <div class="val-tit">Falamos o que<br/>Precisa ser Falado</div>
+        <div class="val-tit">Falamos o que Precisa ser Falado</div>
         <p class="val-desc">Praticamos comunicação direta e respeitosa em feedbacks positivos e negativos. Crescer exige ouvir, ajustar e evoluir. Feedback não é crítica — é cuidado.</p>
       </div>
     </div>
